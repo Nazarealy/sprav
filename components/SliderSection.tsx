@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 
 interface Slide {
@@ -116,13 +116,13 @@ export default function SliderSection() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const totalSlides = slides.length
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides)
-  }
+  }, [totalSlides])
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)
-  }
+  }, [totalSlides])
 
   // Keyboard navigation
   useEffect(() => {
@@ -136,7 +136,7 @@ export default function SliderSection() {
 
     window.addEventListener('keydown', handleKeyPress)
     return () => window.removeEventListener('keydown', handleKeyPress)
-  }, [currentSlide])
+  }, [nextSlide, prevSlide])
 
   return (
     <section className="bg-[#FBFBF9] pb-16">

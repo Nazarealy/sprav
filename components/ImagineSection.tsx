@@ -35,7 +35,7 @@ export default function ImagineSection() {
             <p className="font-sans text-[#404040] text-[18px] sm:text-[20px] md:text-[24px] font-light leading-[1.3em] tracking-[1.5%] text-left">
               Природа там чиста і тиха.
               <br />
-              Лишень листя м'яко пошіптує:
+              Лишень листя м&rsquo;яко пошіптує:
             </p>
           </div>
 

@@ -15,13 +15,6 @@ const config: Config = {
         accent: 'var(--color-accent)',
         background: 'var(--color-background)',
         foreground: 'var(--color-foreground)',
-      },
-      fontFamily: {
-        sans: ['var(--font-alternates)', 'sans-serif'],
-        alternates: ['var(--font-alternates)', 'sans-serif'],
-        montserrat: ['var(--font-sans)', 'sans-serif'],
-      },
-      colors: {
         green: {
           DEFAULT: '#28694D',
           dark: '#1f5239',
@@ -35,6 +28,11 @@ const config: Config = {
         black: {
           DEFAULT: '#404040',
         },
+      },
+      fontFamily: {
+        sans: ['var(--font-alternates)', 'sans-serif'],
+        alternates: ['var(--font-alternates)', 'sans-serif'],
+        montserrat: ['var(--font-sans)', 'sans-serif'],
       },
     },
   },

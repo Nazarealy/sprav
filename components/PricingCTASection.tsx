@@ -7,7 +7,7 @@ export default function PricingCTASection() {
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           {/* Main Heading */}
           <h2 className="text-white text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-[1.3em] tracking-[-1%] mb-6 md:mb-8">
-            Вартість послуг з'явиться ближче до запуску центру.
+            Вартість послуг з&rsquo;явиться ближче до запуску центру.
           </h2>
 
           {/* Subheading */}
