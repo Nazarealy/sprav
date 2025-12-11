@@ -100,13 +100,13 @@ export default function SpaceSection() {
           <h2 className="font-alternates text-[#111111] text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] xl:text-[64px] font-medium leading-[1.1em] tracking-[-2%] mb-2">
             Простір
           </h2>
-          <p className="text-[#28694D] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-medium leading-[1.3em] tracking-[1.5%]">
+          <p className="font-montserrat text-[#28694D] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-medium leading-[1.3em] tracking-[1.5%]">
             де будемо видихати разом
           </p>
         </div>
 
         {/* Main Content: Image and Features */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-20 items-stretch">
           {/* Left Side: Image Gallery - extends to viewport left edge */}
           <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-full -ml-4 md:-ml-8 lg:-ml-16 xl:-ml-[calc(4rem+(100vw-1440px)/2)]">
             <div 
@@ -185,22 +185,22 @@ export default function SpaceSection() {
           </div>
 
           {/* Right Side: Features List */}
-          <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-7 h-full">
+          <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-7 h-full ml-4 sm:ml-6 md:ml-8 lg:ml-12 xl:ml-16">
             {features.map((feature) => (
               <div key={feature.id} className="flex items-start gap-2 sm:gap-3 md:gap-4">
                 {/* Icon */}
-                <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 flex items-center justify-center bg-[#F0F3F0] rounded-full">
+                <div className="flex-shrink-0 flex items-center justify-center">
                   <Image
                     src={feature.icon}
                     alt=""
-                    width={24}
-                    height={24}
-                    className="object-contain w-5 h-5 sm:w-6 sm:h-6"
+                    width={32}
+                    height={32}
+                    className="object-contain w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9"
                   />
                 </div>
                 
                 {/* Text */}
-                <p className="text-[#28694D] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-[1.5em] tracking-[0.5%] flex-1 pt-0.5 sm:pt-1">
+                <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] leading-[1.5em] tracking-[0.5%] flex-1 pt-0.5 sm:pt-1">
                   {feature.text}
                 </p>
               </div>

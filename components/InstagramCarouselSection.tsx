@@ -24,17 +24,17 @@ export default function InstagramCarouselSection() {
   return (
     <section className="bg-[#FBFBF9] py-16 md:py-20 lg:py-24">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16 text-center">
-        <p className="text-[#165731] text-[28px] sm:text-[32px] md:text-[36px] lg:text-[42px] font-semibold mb-2 sm:mb-3 tracking-[-0.01em]">
+        <p className="text-[#165731] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-normal font-montserrat mb-2 sm:mb-3 tracking-[-0.01em]">
           Справжні в інстаграм
         </p>
-        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] leading-[1.7] tracking-[0.1em] mb-6 sm:mb-8">
+        <p className="text-[#111111] text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] font-normal font-montserrat leading-[1.7] tracking-[0.1em] mb-6 sm:mb-8">
           Показуємо та розповідаємо про свій шлях щиро
         </p>
         <p className="text-[#404040] text-[14px] sm:text-[15px] md:text-[17px] mb-8 sm:mb-10 flex items-center justify-center gap-2">
           <span className="inline-flex w-6 h-6 sm:w-7 sm:h-7 relative">
             <Image src="/images/instb.svg" alt="Instagram icon" fill className="object-contain" />
           </span>
-          <span className="font-semibold font-['Roboto']">spravzhni.lviv</span>
+          <span className="font-semibold font-montserrat">spravzhni.lviv</span>
         </p>
       </div>
 

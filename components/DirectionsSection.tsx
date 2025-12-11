@@ -3,15 +3,15 @@
 import Image from 'next/image'
 
 const detailTextClass =
-  'text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] text-[#111111] leading-[1.6] tracking-[0.45%]'
+  'font-montserrat text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] text-[#111111] leading-[1.6] tracking-[0.45%]'
 
 export default function DirectionsSection() {
   return (
     <section id="location" className="bg-[#FBFBF9] py-16 md:py-20 lg:py-24">
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-16 items-stretch">
-          <div className="max-w-[680px]">
-            <h3 className="font-alternates text-[#111111] text-[32px] sm:text-[38px] md:text-[44px] lg:text-[52px] xl:text-[60px] font-semibold leading-[1.1] tracking-[-0.02em] mb-4 sm:mb-5 md:mb-6">
+          <div className="max-w-[420px] ml-20 sm:ml-24 md:ml-32 lg:ml-40">
+            <h3 className="font-alternates text-[#111111] text-[32px] sm:text-[38px] md:text-[44px] lg:text-[52px] xl:text-[60px] font-medium leading-[1.1] tracking-[-0.02em] mb-4 sm:mb-5 md:mb-6">
               Як доїхати
             </h3>
             <p className={`${detailTextClass} mb-6 sm:mb-7 md:mb-8`}>
@@ -22,7 +22,7 @@ export default function DirectionsSection() {
 
             <div className="space-y-4 sm:space-y-5 md:space-y-6">
               <div>
-                <p className="text-[14px] sm:text-[15px] md:text-[16px] font-semibold text-[#111111] mb-2">
+                <p className="font-montserrat text-[14px] sm:text-[15px] md:text-[16px] font-semibold text-[#111111] mb-2">
                   Адреса
                 </p>
                 <div className="flex items-center gap-2 sm:gap-3 text-[#2d2d2d] leading-[1.6] tracking-[0.45%]">
@@ -34,7 +34,7 @@ export default function DirectionsSection() {
               </div>
 
               <div>
-                <p className="text-[14px] sm:text-[15px] md:text-[16px] font-semibold text-[#111111] mb-2">
+                <p className="font-montserrat text-[14px] sm:text-[15px] md:text-[16px] font-semibold text-[#111111] mb-2">
                   Автівкою
                 </p>
                 <p className={`${detailTextClass} mb-2`}>
@@ -47,7 +47,7 @@ export default function DirectionsSection() {
               </div>
 
               <div>
-                <p className="text-[14px] sm:text-[15px] md:text-[16px] font-semibold text-[#111111] mb-2">
+                <p className="font-montserrat text-[14px] sm:text-[15px] md:text-[16px] font-semibold text-[#111111] mb-2">
                   Трансфером
                 </p>
                 <p className={detailTextClass}>

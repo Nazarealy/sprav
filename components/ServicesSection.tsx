@@ -29,9 +29,9 @@ const ServiceItem = ({
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-stretch">
       {/* Left Column: Text and Buttons */}
-      <div className="order-2 lg:order-1 flex flex-col h-full">
+      <div className="order-2 lg:order-1 flex flex-col h-full pl-8 sm:pl-12 md:pl-16 lg:pl-24 xl:pl-32">
         {/* Section Heading */}
-        <h3 className="text-[#111111] text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[30px] font-bold leading-[1.3em] tracking-[-1%] mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+        <h3 className="font-montserrat text-[#111111] text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px] xl:text-[30px] font-bold leading-[1.3em] tracking-[-1%] mb-4 sm:mb-5 md:mb-6 lg:mb-8">
           {heading}
         </h3>
 
@@ -40,7 +40,7 @@ const ServiceItem = ({
           {paragraphs.map((paragraph, index) => (
             <p
               key={index}
-              className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] leading-[1.5em] tracking-[0.5%]"
+              className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] leading-[1.5em] tracking-[0.5%]"
             >
               {paragraph}
             </p>
@@ -52,16 +52,20 @@ const ServiceItem = ({
           {showPrimaryButton && (
             <button 
               onClick={primaryButtonText === 'Варіанти відпочинку' ? openVacationOptionsPopup : undefined}
-              className="w-full bg-[#28694D] text-white px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg text-[14px] sm:text-[15px] md:text-[16px] font-medium hover:bg-[#1f5239] hover:font-bold transition-all"
+              className="w-full bg-[#28694D] rounded-[32px] px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 flex items-center justify-center transition-all duration-300"
             >
-              {primaryButtonText}
+              <span className={`hover-bold-no-shift font-montserrat text-white text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] transition-all duration-300`} data-text={primaryButtonText}>
+                <span>{primaryButtonText}</span>
+              </span>
             </button>
           )}
           <button 
             onClick={secondaryButtonText === "Зв'язатися з нами" || secondaryButtonText === "Повідомте коли старт" ? openPopup : undefined}
-            className="w-full bg-white text-[#28694D] border-2 border-[#28694D] px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 rounded-lg text-[14px] sm:text-[15px] md:text-[16px] font-medium hover:bg-[#F0F3F0] hover:font-bold transition-all"
+            className="w-full bg-white text-[#28694D] border-2 border-[#28694D] rounded-[32px] px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 flex items-center justify-center transition-all duration-300"
           >
-            {secondaryButtonText}
+            <span className={`hover-bold-no-shift font-montserrat text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] transition-all duration-300`} data-text={secondaryButtonText}>
+              <span>{secondaryButtonText}</span>
+            </span>
           </button>
         </div>
       </div>
@@ -117,7 +121,7 @@ const servicesData: ServiceItemProps[] = [
       'Мінімальне бронювання — дві доби.',
     ],
     primaryButtonText: 'Дізнатися більше',
-    secondaryButtonText: 'Зв\'язатися з нами',
+    secondaryButtonText: 'Повідомте коли старт',
     imageSrc: '/images/s2.png',
     showPrimaryButton: false,
     overlayText: 'чекаємо з квітня',
@@ -131,7 +135,7 @@ const servicesData: ServiceItemProps[] = [
       'І, що вкрай важливо, наш СПА-центр буде повністю безбарʼєрним: ми дбаємо про найменші деталі для  зручності усіх наших гостей.',
     ],
     primaryButtonText: 'Дізнатися більше',
-    secondaryButtonText: 'Зв\'язатися з нами',
+    secondaryButtonText: 'Повідомте коли старт',
     imageSrc: '/images/s3.png',
     showPrimaryButton: false,
     overlayText: 'чекаємо з квітня',
@@ -146,7 +150,7 @@ const servicesData: ServiceItemProps[] = [
       'Твій персональний координатор подбає про деталі, які є для тебе важливими.',
     ],
     primaryButtonText: 'Дізнатися більше',
-    secondaryButtonText: 'Зв\'язатися з нами',
+    secondaryButtonText: 'Повідомте коли старт',
     imageSrc: '/images/s4.png',
     showPrimaryButton: false,
     overlayText: 'чекаємо з квітня',
@@ -160,7 +164,7 @@ const servicesData: ServiceItemProps[] = [
       'Безкоштовно для: ветеранів, членів їхніх родин, а також родин полеглих, полонених та зниклих безвісти.',
     ],
     primaryButtonText: 'Дізнатися більше',
-    secondaryButtonText: 'Зв\'язатися з нами',
+    secondaryButtonText: 'Повідомте коли старт',
     imageSrc: '/images/s5.png',
     showPrimaryButton: false,
     overlayText: 'чекаємо з квітня',
@@ -172,11 +176,11 @@ export default function ServicesSection() {
     <section id="services" className="bg-white py-16 md:py-20 lg:py-24">
       <div className="w-full">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
-          <div className="space-y-2 md:space-y-3 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
+          <div className="space-y-2 md:space-y-3 mb-8 sm:mb-10 md:mb-12 lg:mb-14 pl-8 sm:pl-12 md:pl-16 lg:pl-24 xl:pl-32">
             <h2 className="font-alternates text-[#111111] text-[36px] sm:text-[42px] md:text-[48px] lg:text-[56px] xl:text-[64px] font-medium leading-[1.1em] tracking-[-2%]">
               Послуги
             </h2>
-            <p className="text-[#28694D] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-medium leading-[1.3em] tracking-[1.5%]">
+            <p className="font-montserrat text-[#28694D] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] xl:text-[20px] font-medium leading-[1.3em] tracking-[1.5%]">
               будуть доступні навіть без проживання
             </p>
           </div>

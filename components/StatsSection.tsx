@@ -24,9 +24,9 @@ export default function StatsSection() {
           <p className="text-[#111111] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] font-light tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.35em] mb-4 sm:mb-5">
             «Справжні» вже закумулювали
           </p>
-          <p className="text-[#111111] text-[60px] sm:text-[75px] md:text-[90px] lg:text-[110px] xl:text-[120px] font-light leading-[1]">
+          <p className="text-[#111111] text-[60px] sm:text-[75px] md:text-[90px] lg:text-[110px] xl:text-[120px] font-light leading-[1] flex items-center justify-center">
             <span className="inline-flex tracking-[0.02em]">229 850</span>
-            <span className="ml-2 sm:ml-3 text-[48px] sm:text-[60px] md:text-[70px] lg:text-[84px] xl:text-[92px] align-top">₴</span>
+            <span className="ml-2 sm:ml-3 text-[60px] sm:text-[75px] md:text-[90px] lg:text-[110px] xl:text-[120px]">₴</span>
           </p>
           <p className="text-[#111111] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-light tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.35em] mt-3 sm:mt-4">
             на відновлення та реінтеграцію ветеранів
@@ -39,7 +39,7 @@ export default function StatsSection() {
               key={card.id}
               className="bg-[#F5F6F3] border border-[#E9E9E6] p-6 sm:p-7 md:p-8 min-h-[180px] sm:min-h-[200px] md:min-h-[220px] lg:min-h-[240px] flex items-center"
             >
-              <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] leading-[1.6] tracking-[0.45%]">
+              <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] leading-[1.6] tracking-[0.45%] text-center max-w-[85%] mx-auto">
                 {card.body}
                 {card.link && (
                   <>

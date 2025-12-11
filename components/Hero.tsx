@@ -27,11 +27,11 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-[60px] sm:gap-[80px] md:gap-[100px] lg:gap-[120px] max-w-[735px] mx-auto px-4">
           {/* Text Content */}
           <div className="flex flex-col items-center gap-3 sm:gap-4 w-full">
-            <p className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-light leading-[1.3em] tracking-[1.5%] text-center drop-shadow-[0_0_20px_rgba(0,0,0,1)]">
+            <p className="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-semibold leading-[1.3em] tracking-[1.5%] text-center drop-shadow-[0_0_20px_rgba(0,0,0,1)]">
               Центр для подій і відпочинку за 35 км від Львова
             </p>
             
-            <div className="flex flex-wrap items-center justify-center gap-2">
+            <div className="flex items-center justify-center gap-2 whitespace-nowrap">
               <p className="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] font-normal leading-[1.5em] tracking-[0.5%] text-center">
                 80% прибутку — на відновлення та реінтеграцію ветеранів.
               </p>
@@ -52,10 +52,10 @@ export default function Hero() {
                 }
               }
             }}
-            className="bg-[#28694D] rounded-[32px] px-6 sm:px-8 md:px-12 lg:px-16 py-2 h-11 sm:h-12 flex items-center justify-center hover:bg-[#1f5239] transition-colors group"
+            className="bg-[#28694D] rounded-[32px] px-6 sm:px-8 md:px-12 lg:px-16 py-2 h-11 sm:h-12 flex items-center justify-center transition-all duration-300"
           >
-            <span className="text-[#F8F8F3] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-normal group-hover:font-bold leading-[1.3em] tracking-[1.5%] transition-all">
-              Послуги
+            <span className={`hover-bold-no-shift font-montserrat text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-normal leading-[1.3em] tracking-[1.5%] transition-all duration-300`} data-text="Послуги">
+              <span>Послуги</span>
             </span>
           </button>
         </div>

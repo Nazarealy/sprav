@@ -29,7 +29,7 @@ export default function ImagineSection() {
         </div>
 
         {/* Right Column - Descriptive Text */}
-        <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 pr-0 md:pr-[200px] lg:pr-[320px] pl-0 md:pl-auto ml-0 md:ml-auto items-start md:items-end mt-6 md:mt-0 py-8 sm:py-10 md:py-12 lg:py-16">
+        <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 pr-0 md:pr-[280px] lg:pr-[400px] pl-0 md:pl-auto ml-0 md:ml-auto items-start md:items-end mt-6 md:mt-0 py-8 sm:py-10 md:py-12 lg:py-16">
           {/* First paragraph */}
           <div className="flex flex-col justify-end gap-8 sm:gap-12 md:gap-16 w-full md:w-[350px] lg:w-[392px]">
             <p className="font-sans text-[#404040] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-light leading-[1.3em] tracking-[1.5%] text-left">

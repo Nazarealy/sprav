@@ -249,7 +249,7 @@ export default function SliderSection() {
                             {slides[1].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[1].text.body}
                         </p>
                       </div>
@@ -298,7 +298,7 @@ export default function SliderSection() {
                             {slides[2].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[2].text.body}
                         </p>
                       </div>
@@ -347,7 +347,7 @@ export default function SliderSection() {
                             {slides[3].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[3].text.body}
                         </p>
                       </div>
@@ -396,7 +396,7 @@ export default function SliderSection() {
                             {slides[4].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[4].text.body}
                         </p>
                       </div>
@@ -445,7 +445,7 @@ export default function SliderSection() {
                             {slides[5].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[5].text.body}
                         </p>
                       </div>
@@ -494,7 +494,7 @@ export default function SliderSection() {
                             {slides[6].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[6].text.body}
                         </p>
                       </div>
@@ -543,7 +543,7 @@ export default function SliderSection() {
                             {slides[7].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[7].text.body}
                         </p>
                       </div>
@@ -592,7 +592,7 @@ export default function SliderSection() {
                             {slides[8].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[8].text.body}
                         </p>
                       </div>
@@ -641,7 +641,7 @@ export default function SliderSection() {
                             {slides[9].text.heading}
                           </h3>
                         </div>
-                        <p className="text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%]">
+                        <p className="font-montserrat text-[#111111] text-[14px] sm:text-[15px] md:text-[16px] font-normal leading-[1.5em] tracking-[0.5%] ml-[calc(2rem+0.5rem)] sm:ml-[calc(2.25rem+0.75rem)] md:ml-[calc(2.5rem+0.75rem)]">
                           {slides[9].text.body}
                         </p>
                       </div>

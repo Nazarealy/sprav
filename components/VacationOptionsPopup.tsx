@@ -123,11 +123,11 @@ export default function VacationOptionsPopup({ isOpen, onClose }: VacationOption
         }
       }}
     >
-      <div className="bg-[#F5F5F5] max-w-[90vw] w-full max-h-[90vh] overflow-hidden relative">
+      <div className="bg-[#F5F5F5] w-full max-h-[104.5vh] overflow-hidden relative my-12">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-white hover:text-gray-200 transition-colors z-20"
+          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-800 transition-colors z-20"
           aria-label="Close"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
@@ -136,7 +136,7 @@ export default function VacationOptionsPopup({ isOpen, onClose }: VacationOption
         </button>
 
         {/* Carousel Container */}
-        <div className="relative py-8 px-4 md:px-8">
+        <div className="relative py-12 px-4 md:px-8">
           <div
             ref={scrollRef}
             onScroll={checkScrollButtons}
@@ -146,7 +146,7 @@ export default function VacationOptionsPopup({ isOpen, onClose }: VacationOption
             {serviceOptions.map((option, index) => (
               <div
                 key={option.id}
-                className="flex-shrink-0 w-[320px] md:w-[380px] bg-white rounded-lg overflow-hidden shadow-md"
+                className="flex-shrink-0 w-[320px] md:w-[380px] bg-white overflow-hidden shadow-md"
               >
                 {/* Image */}
                 <div className="relative w-full h-[240px] md:h-[280px] bg-gray-200">
@@ -160,7 +160,7 @@ export default function VacationOptionsPopup({ isOpen, onClose }: VacationOption
                   {/* Overlay Text */}
                   <div className="absolute top-0 left-0 right-0 bg-black/70 text-white px-6 z-10">
                     <div className="flex items-center justify-center min-h-[68px] md:min-h-[80px]">
-                      <p className="text-[15px] md:text-[16px] font-medium text-center">
+                      <p className="font-montserrat text-[15px] md:text-[16px] font-medium text-center">
                         чекаємо з квітня
                       </p>
                     </div>
@@ -169,10 +169,10 @@ export default function VacationOptionsPopup({ isOpen, onClose }: VacationOption
 
                 {/* Footer with white background */}
                 <div className="bg-white px-4 py-4">
-                  <h3 className="text-[#111111] text-lg font-bold mb-2">
+                  <h3 className="font-montserrat text-[#111111] text-lg font-bold mb-2">
                     {option.title}
                   </h3>
-                  <p className="text-[#111111] text-sm leading-relaxed">
+                  <p className="font-montserrat text-[#111111] text-sm leading-relaxed">
                     {option.description}
                   </p>
                 </div>
@@ -184,7 +184,7 @@ export default function VacationOptionsPopup({ isOpen, onClose }: VacationOption
           {canScrollRight && (
             <button
               onClick={() => handleScroll('right')}
-              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 border border-[#D1D1D1] rounded-full shadow-sm flex items-center justify-center text-xl text-[#111111] hover:bg-white transition-colors"
+              className="font-montserrat absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 border border-[#D1D1D1] shadow-sm flex items-center justify-center text-xl text-[#111111] hover:bg-white transition-colors"
               aria-label="Scroll right"
             >
               ›
@@ -195,7 +195,7 @@ export default function VacationOptionsPopup({ isOpen, onClose }: VacationOption
           {canScrollLeft && (
             <button
               onClick={() => handleScroll('left')}
-              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 border border-[#D1D1D1] rounded-full shadow-sm flex items-center justify-center text-xl text-[#111111] hover:bg-white transition-colors"
+              className="font-montserrat absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 bg-white/90 border border-[#D1D1D1] shadow-sm flex items-center justify-center text-xl text-[#111111] hover:bg-white transition-colors"
               aria-label="Scroll left"
             >
               ‹
